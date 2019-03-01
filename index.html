@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Mickiewczova</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/mickiewiczova.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+  </head>
+  <body class="homepage is-preload">
+    <div id="wrapper">
+      <section class="navigation-menu " id="navbar">
+        <div class="container-fluid navigation" id="navigation">
+          <div class="container">
+            <nav  class="navbar navbar-expand-lg navbar-light" id="nav">
+              <a class="navbar-brand " href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#about" onclick="about()">PROJEKT <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ponuka-bytov" onclick="ponuka()">PONUKA BYTOV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cennik">CENNÍK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#location" onclick="map()">LOKALITA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery" onclick="gallery()">GALÉRIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact" onclick="contact()">KONTAKT</a>
+                  </li>
+                  <li class="nav-button">
+                    <a class="nav-link" href="virtualna-prehliadka">360° VR TOUR</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section id = "mainCover">
+        <div class="container-fluid">
+          <div class="aboutHolder">
+            <img src="images/background.jpg">
+              <div class="banner">
+              <h4 class="top w-100 text-center">ZAČIATOK VÝSTAVBY</h4>
+              <h4 class="bottom w-100 text-center">UŽ V MARCI 2019</h4>
+            </div>
+            
+          </div>
+        </div>
+        <div id="about"  name="about" class="">
+          <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-6 white w-100 ">
+                    <h3 class="w-100 text-center">Obytný komplex</h3>
+                    <p class="w-100 mt-4">- tvoria 2 bytové domy s podzemným parkovaním</p>
+                    <p class="w-100">- zelená vegetačná strecha na strope podzemného podlažia medzi domami</p>
+                    <p class="w-100">- široké átrium so zeleňou</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/slider/komplex.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                 <div class="row">
+                  <div class="col-lg-6 white   w-100">
+                    <h3 class="w-100 text-center">Objekt A</h3>
+                    <p class="w-100 mt-4">- bytový dom s podzemným parkoviskom</p>
+                    <p class="w-100">- 7 nadzemných podlaží</p>
+                    <p class="w-100">- prenajímateľný priestor na prízemí</p>
+                    <p class="w-100">- 23 bytov a bytových jednotiek na 1 - 7 poschodí</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/slider/budovaa.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                 <div class="row">
+                  <div class="col-lg-6 white  w-100">
+                    <h3 class="w-100 text-center">Objekt B</h3>
+                    <p class="w-100 mt-4">- bytový dom s podzemným parkovaním</p>
+                    <p class="w-100">- skladá sa z 3 nadzemných podlaží</p>
+                    <p class="w-100">- ponúka 8 bytov</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/slider/budovab.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                 <div class="row">
+                  <div class="col-lg-6 white  w-100">
+                    <h3 class="w-100 text-center">Átrium</h3>
+                    <p class="w-100 mt-4">- dvorová časť plná zelene</p>
+                    <p class="w-100">- atmosféra prírody v centre mesta</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/slider/01.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <div class="controlHolder">
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"><i class="fas fa-chevron-left fa-lg"></i></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"><i class="fas fa-chevron-right fa-lg"></i></span>
+              </a>
+            </div>
+            
+          </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="vystavba">
+        <div class="container-fluid vystavba">
+          <div class="container timelineDesktop">
+            <div class="row ">
+              <div class="col-md-4 text-left">
+                <h6>Začiatok výstavby</h6>
+                <h4 class="mt-4">marec 2019</h4>
+              </div>
+              <div class="col-md-4 text-center">
+                <h6>Ukončená hrubá stavba</h6>
+                <h4 class="mt-4">december 2019</h4>
+              </div>
+              <div class="col-md-4 text-right">
+                <h6> Odovzdanie bytov</h6>
+                <h4 class="mt-4">august 2020</h4>
+             </div>
+            </div>
+            <div class="timelineWrapper">
+              <div class="left circle"></div>
+              <div class="vline left"></div>
+              <div class="vline"></div>
+              <div class="vline"></div>
+              <div class="vline right"></div>
+              <div class="right circle"></div>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="container timelineMobile">
+            <div class="row ">
+              <div class="col-6">
+                <div class="timelineWrapper">
+                  <div class="left circle"></div>
+                  <div class="vline first"></div>
+                  <div class="vline second"></div>
+                  <div class="vline third"></div>
+                  <div class="vline fourth"></div>
+                  <div class="right circle"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="col-md-4 text-center">
+                  <h6 class="pt-4">Začiatok výstavby</h6>
+                  <h4 class="mb-4">marec 2019</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                  <h6 class="pt-4">Ukončená hrubá stavba</h6>
+                  <h4 class="mb-4">december 2019</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                  <h6 class="pt-4"> Odovzdanie bytov</h6>
+                  <h4 class="mb-4">august 2020</h4>
+               </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section id="specifikacia">
+        <div class="container">
+          <div class="row">
+            <h3 class="w-100 text-center mt-4 headText mb-4">Technická špecifikácia</h3>
+            <div class="col-lg-6 ">
+              <div>
+                <h6 onclick="showText(this)">Konštrukčný systém stavby<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Zakladanie na základovej doske. Nosný systém je tvorený monolitickými stenami v kombinácii so stĺpmi. Schodisko je monolitické vrátane oceľového zábradlia. Stropy sú zo železobetónovej dosky</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Obvodový a strešný plášť<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Obvodový plášť je tvorený kontaktným zatepľovacích systémom s minerálnou vlnou hr.200 mm na železobetónovej obvodovej stene, fasádna omietka. Strecha objektu je plochá so všetkými izolačnými vrstvami</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Garáže<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Objekt má dve podzemné podlažia navrhované ako podzemné parkovisko, prístupné sú rampou. Garáže sú prístupné cez bránu, parkovacie státia sú označené vodorovným dopravným značením na vyspádovanej betónovej podlahe</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Povrchová úprava stien a stropov<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Na stenách bytov a spoločných priestorov je navrhovaná štuková omietka s náterom, v hygienických zariadeniach je povrch ukončený vápenocementovou omietkou.</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Okná a dvere<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Vstupné dvere do bytov majú požadovanú požiarnu odolnosť vrátane bezpečnostného kovania. Interiérové dvere budú podľa požiadaviek budúceho vlastníka bytu. Okná a dvere sú plastové s izolačným trojskom, vnútorný parapet biely, vonkajší parapet z poplastovaného plechu.</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Vykurovanie<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">V bytoch je podlahové vykurovanie z centrálnej kotolne umiestnenej v objekte, v kúpelni je navrhovaný rebríkový radiátor</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Vzduchotechnika<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Rozvody VZT bytu sú predpripravené na napojenie kuchynského digestora, kúpelne sú vetrané ventilátorom</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <h6 onclick="showText(this)">Klimatizácia<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Všetky byty sú klimatizované samostatnými jednotkami</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Deliace a interiérové priečky<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Steny medzi bytmi sú zo železobetónu hr.180mm, priečky hygienických zariadení sú z tehál hr.115 mm, v interiéri sú deliace priečky zo sadrokartónu, inštalačné jadrá sú obložené sadrokartónom</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Spoločné priestory<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Vstupné dvere na čip sú hliníkové, pri vstupe sa nachádzajú poštové schránky, podlahy chodieb sú z gresu, schodiská majú protišmykovú úpravu, stropy vstupu sú zo sadrokartónového podhľadu. Výťah je pre 9 osôb / 680 kg nosnosť. V exteriéri sa nachádzajú prvky drobnej architektúry a zeleň</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Skladovacie priestory<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Každý byt má sklad v 2.podzemnom podlaží časti A v časti B sa pri bytoch nachádzajú murované komory</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Podlahy a obklady<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Podlahy bytov sú ukončené anhydridovým poterom, podlahy nie sú súčasťou bytov. Obklady a dlažby nie sú súčasťou bytov. Loggia, balkón a terasy sú ukončené finálnou nášľapnou vrstvou. Zábradlia sú na balkónoch a loggiách oceľové, na terasách oceľové so sklenenou výplňou</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Sanita<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Byty v hygienických zariadeniach sú ukončené ventilmi a vývodmi, vo WC je zabudovaný Geberit</p>
+              </div>
+              <div>
+                <h6 onclick="showText(this)">Elektroinštalácia<i class="fas fa-plus-circle"></i><i class="fas fa-minus-circle hide"></i></h6>
+                <p class="hide">Každý byt má samostatné meranie, byty majú ukončené svetelné a zásuvkové obvody vrátane zásuviek a spínačov, predpríprava stropného osvetlenia bez dodávky svietidiel. Slaboprúdové rozvody obsahujú elektronický prístupový systém</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ponuka">
+        <div class="container-fluid">
+          <div class="container">
+            <div id="ponukaBytov" >
+                <div class="row">
+                  <div class="col-md-6 white w-100 ">
+                    <h3 class="w-100 text-center">Ponuka bytov</h3>
+                    <p class="w-100 mt-4">- v objekte A nájdete 23 bytových jednotiek</p>
+                    <p class="w-100">- medzi objektami A a objektom B bude na strope</p>
+                    <a class="ponukahref">Pozrieť ponuku</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="images/slider/01.jpg">
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </section>
+      <section id="virtualTour">
+        <div class="container">
+          <div class="row">
+            <h3 class="mt-4 text-center w-100 headText">Vyberte sa na 3D virtuálnu prehliadku</h3>
+            <p class="mt-4 text-center w-100">Vyskúšajte sa prejsť po apartmáne a nahliadnuť do exteriéru cez 360° virtuálnu prehliadku</p>
+            <div class="mt-4 virtualtour">
+              <img class="w-100" src="images/360.jpg">
+              <a class="vthref">Vyskúšať</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" name="gallery">
+        <div class="container">
+          <div class="row">
+            <h3 class="w-100 text-center mb-4 headText">Galéria</h3>
+          </div>
+           <!-- <div>
+              <div class="col-md-4 galleryItem">
+                <h4>EXTERIÉR</h4>
+                <div class="background"></div>
+                <img class="w-100" src="images/gallery/main1.jpg">
+                
+              </div>
+              <div class="col-md-4 galleryItem">
+                <h4>INTERIÉR</h4>
+                <div class="background"></div>
+                <img class="w-100" src="images/gallery/main1.jpg">
+                
+              </div>
+              <div class="col-md-4 galleryItem">
+                <h4>VÝSTAVBA</h4>
+                <div class="background"></div>
+                <img class="w-100" src="images/gallery/main1.jpg">
+              </div>
+            </div>-->
+            <div class = "row">
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/2.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/2_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                    
+                  </a>
+                </div>
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/5.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/5_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                  </a>
+                </div>
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/6.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/6_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/4.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/4_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                  </a>
+                </div>
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/1.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/1_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                  </a>
+                </div>
+                <div class = "col-lg-4 col-md-4 col-12 thumb">
+                  <a href="images/gallery/3.jpg" data-fancybox="images" class="fancybox">
+                    <div class="zoom">
+                      <img src="images/gallery/3_min.jpg" alt="" class=" img-fluid">
+                    </div>
+                  </a>
+                </div>
+              </div>
+      </section>
+      <section id="location" name="location">
+        <div class="container">
+          <div class="row">
+            <h3 class="w-100 text-center mt-4 headText">Lokalita</h3>
+            <h6 class="w-100 text-center mt-4">Nové byty v Starom meste</h6>
+            <p class="w-100 text-center mt-4">Bytový komplex staviame v blízkosti Obchodnej ulice, Medickej záhrady a Prezidentského paláca <br>Pozrite si zoznam služieb a aktivít v okolí</p>
+            <div class="w-100 mt-4" id="map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="finance" name="finance">
+        <div class="container">
+          <div class="row">
+            <h3 class="w-100 text-center mt-4 headText">Financovanie</h3>
+            <p class="mt-4 text-center w-100">Za svoje vysnívané bývanie zaplatíte postupne:</p>
+            <p class="text-center w-100">- 15 % sumy do 3 dní od podpísania zmluvy</p>
+            <p class="text-center w-100">- 15 % sumy do 7 dní od písomného oznámenia zápisu rozostavanej stavby na Katastralnom úrade</p>
+            <p class="text-center w-100">- 70 % sumy do 30 dní odo dňa doručenia oznámenia o nadobudnutí právoplatnosti kolaudačného rozhodnutia</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" name="contact">
+        <div class="container-fluid background">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <form">
+                  <div class="form-group">
+                    <label for="name">Meno</label>
+                    <input type="text" class="form-control" id="meno" placeholder="Zadajte Vaše meno">
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Priezvisko</label>
+                    <input type="text" class="form-control" id="priezvisko" placeholder="Zadajte Vaše priezvisko">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Zadajte Vaš email">
+                  </div>
+                  <div class="form-group">
+                    <label for="number">Telefónne číslo</label>
+                    <input type="text" class="form-control" id="telefon" placeholder="Zadajte Vaše telefónne číslo">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">Vaša správa</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                  </div>
+                  <button class="w-100" type="submit" class="btn btn-default" onclick="sendEmail(event)">Odoslať</button>
+                </form>
+              </div>  
+              <div class="col-md-6 col-12">
+                <div>
+                  <h3 class="w-100 text-center mt-4 headText">Sídlo</h3>
+                  <p class="w-100 text-center mt-4 mb-1">FINGEST, s.r.o</p>
+                  <p class="w-100 text-center mb-1">Polus Tower1</p>
+                  <p class="w-100 text-center mb-1">Vajnorská 100/A</p>
+                  <p class="w-100 text-center mb-1">831 04, Bratislava</p>
+                  <p class="w-100 text-center mb-1">t. č. 0917 99 77 77</p>
+                </div>
+                <div>
+                  <h3 class="w-100 text-center mt-4 headText">Kontaktná osoba</h3>
+                  <p class="w-100 text-center mt-4">Ing. Katarína Kurucová</p>
+                  <p class="w-100 text-center ">Volajte na 0917 99 77 77</p>
+                  <p class="w-100 text-center ">Napíšte nám na info@novebytystaremesto.sk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer" name="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <ul class="">
+                  <li class="">
+                    <a class="" href="#about" onclick="about()">PROJEKT</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#ponuka" onclick="ponuka()">PONUKA BYTOV</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="cennik">CENNÍK</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#location" onclick="map()">LOKALITA</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#gallery" onclick="gallery()">GALÉRIA</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#contact" onclick="contact()">KONTAKT</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12 created">
+              <a href="https://enli.sk" target="_blank">© 2018 ENLI VR Solutions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/mickiewiczova.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF8IVFFM04aaeMAzM_mutHH0UbcrPnwvk&callback=initMap" type="text/javascript"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js'></script>
+  </body>
+</html>
+
+

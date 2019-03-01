@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Mickiewczova</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/mickiewiczova.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+  </head>
+  <body class="homepage is-preload">
+    <div id="wrapper">
+      <section class="navigation-menu">
+        <div class="container-fluid navigation">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand " href="../#">
+                <img src="../images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../#about">PROJEKT <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">PONUKA BYTOV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../cennik">CENNÍK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../#location">LOKALITA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../#gallery">GALÉRIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../#contact">KONTAKT</a>
+                  </li>
+                  <li class="nav-item nav-button">
+                    <a class="nav-link" href="../virtualna-prehliadka">360° VR Tour</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section id="buildingTab">
+        <div class="container">
+          <div class="row">
+            <ul class="nav nav-pills mb-3 col-12" id="pills-tab-buildings" role="tablist">
+              <li class="nav-item col-6 ">
+                <a class="nav-link active tex-center" id="pills-budova-a-tab" data-toggle="pill" href="#pills-budova-a" role="tab" aria-controls="pills-budova-a" aria-selected="true" onclick="refreshMap(), tabA()">Budova A</a>
+              </li>
+              <li class="nav-item col-6 ">
+                <a class="nav-link tex-center" id="pills-budova-b--tab" data-toggle="pill" href="#pills-budova-b" role="tab" aria-controls="pills-budova-b" aria-selected="false" onclick="refreshMap(),tabB()">Budova B</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="floorPicker">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="tab-content" id="pills-tabContent-buildings">
+              <div class="tab-pane fade show active" id="pills-budova-a" role="tabpanel" aria-labelledby="pills-budova-a-tab">
+                <div class="image-1140">
+                  <img src="../images/budovy/Budova_A_1140.jpg" usemap="#image-map1" class="budova1">
+
+                  <map name="image-map1">
+                    <area target="" alt="" title=""  coords="337,368,704,428" shape="rect"  onmouseenter ="getData('A', '1.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title="" coords="338,368,710,309" shape="rect" onclick="showNP(2)" onmouseenter="getData('A', '2.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="338,308,711,252" shape="rect" onclick="showNP(3)" onmouseenter="getData('A', '3.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="338,251,711,192" shape="rect" onclick="showNP(4)" onmouseenter="getData('A', '4.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="338,191,711,134" shape="rect" onclick="showNP(5)" onmouseenter="getData('A', '5.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="338,135,713,136,712,72,337,67" onclick="showNP(6)" shape="poly" onmouseenter="getData('A', '6.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="337,67,715,72,715,15,339,9" onclick="showNP(7)" shape="poly" onmouseenter="getData('A', '7.NP')" onmouseleave="hideInfoPanel()">
+                </map>
+                </div>
+                <div class="image-768">
+                  <img src="../images/budovy/Budova_A_768.jpg" usemap="#image-map1.2" class="budova2">
+
+                  <map name="image-map1.2">
+                    <area target="" alt="" title=""  coords="223,248,477,291" shape="rect" onmouseenter="getData('A', '1.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="223,209,477,247" shape="rect"  onclick="showNP(2)" onmouseenter="getData('A', '2.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="223,170,478,208" shape="rect" onclick="showNP(3)" onmouseenter="getData('A', '3.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="223,130,480,170" shape="rect" onclick="showNP(4)" onmouseenter="getData('A', '4.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="225,88,480,130" shape="rect" onclick="showNP(5)" onmouseenter="getData('A', '5.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="225,87,480,88,479,50,225,47" onclick="showNP(6)" shape="poly" onmouseenter="getData('A', '6.NP')" onmouseleave="hideInfoPanel()">
+                    <area target="" alt="" title=""  coords="223,46,481,49,482,9,225,7" onclick="showNP(7)" shape="poly" onmouseenter="getData('A', '7.NP')" onmouseleave="hideInfoPanel()">
+                </map>
+                </div>
+                <div id = "infoPanelA">
+                  <h4>Objekt A</h4>
+                  <h4 id = "infoPodlazieA"></h4>
+                  <p id="dvojizboveA" class="mt-4"></p>
+                  <p id="trojizboveA"></p>
+                  <p id="stvorizboveA"></p>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-budova-b" role="tabpanel" aria-labelledby="pills-budova-b-tab">
+                <div class="image-1140">
+                  <img src="../images/budovy/Budova_B_1140.jpg" usemap="#image-map2" class="budova3">
+
+                  <map name="image-map2" >
+                      <area target="" alt="" title="" onclick="showNP(9)"  coords="80,161,75,313,1100,310,1093,169" shape="poly">
+                      <area target="" alt="" title="" onclick="showNP(8)"  coords="71,426,1104,420,1100,310,75,312" shape="poly">
+                  </map>
+                </div>
+                <div class="image-768">
+                  <img src="../images/budovy/Budova_B_768.jpg" usemap="#image-map2.2" class="budova4">
+
+                  <map name="image-map2.2">
+                    <area target="" alt="" title="" onclick="showNP(9)" coords="53,111,50,209,741,208,737,114" shape="poly">
+                    <area target="" alt="" title="" onclick="showNP(8)" coords="50,208,47,282,743,279,742,207" shape="poly">
+                </map>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="flatPickerA">
+        <div class="container">
+          <div class="col-12" id = "NP2">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/2.NP_768.png" usemap="#image-map-2NP" class="2NP-1140 m-auto">
+              <map name="image-map-2NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-01-app" coords="513,719,629,716,632,778,746,777,744,720,742,431,563,431,563,573,513,575" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-02-app" coords="509,721,509,781,399,781,398,716,280,717,250,645,280,646,277,434,459,432,459,572,509,577" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-03-app" coords="219,570,274,572,274,430,398,430,396,340,277,340,269,62,171,62,169,70,22,69" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-04-app" coords="277,67,403,69,407,59,507,62,510,289,472,291,472,360,398,360,400,338,276,337" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-05-app" coords="511,65,622,66,628,59,745,62,748,429,616,426,620,361,551,360,553,293,513,291" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/2.NP_520.png" usemap="#image-map-2NP-768" class="2NP-768 m-auto">
+              <map name="image-map-2NP-768">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-01-app" coords="506,291,382,292,380,385,347,386,347,484,425,485,427,525,504,526" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-02-app" coords="309,290,309,387,344,389,345,527,269,526,267,484,190,485,168,433,189,434,188,293" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-03-app" coords="505,43,346,43,345,198,372,195,373,243,420,245,419,288,506,289" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-04-app" coords="185,44,186,226,270,230,269,243,319,243,319,196,346,197,347,43" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a2-05-app" coords="15,44,150,386,185,385,186,290,269,287,269,228,187,227,186,43" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP3">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/3.NP_768.png" usemap="#image-map-3NP" class="3NP-1140 m-auto">
+              <map name="image-map-3NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-01-app" coords="513,719,629,716,632,778,746,777,744,720,742,431,563,431,563,573,513,575" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-02-app" coords="509,721,509,781,399,781,398,716,280,717,250,645,280,646,277,434,459,432,459,572,509,577" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-03-app" coords="219,570,274,572,274,430,398,430,396,340,277,340,269,62,171,62,169,70,22,69" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-04-app" coords="277,67,403,69,407,59,507,62,510,289,472,291,472,360,398,360,400,338,276,337" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-05-app" coords="511,65,622,66,628,59,745,62,748,429,616,426,620,361,551,360,553,293,513,291" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/3.NP_520.png" usemap="#image-map-3NP-768" class="3NP-768 m-auto">
+              <map name="image-map-3NP-768">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-01-app" coords="506,291,382,292,380,385,347,386,347,484,425,485,427,525,504,526" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-02-app" coords="309,290,309,387,344,389,345,527,269,526,267,484,190,485,168,433,189,434,188,293" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-03-app" coords="505,43,346,43,345,198,372,195,373,243,420,245,419,288,506,289" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-04-app" coords="185,44,186,226,270,230,269,243,319,243,319,196,346,197,347,43" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a3-05-app" coords="15,44,150,386,185,385,186,290,269,287,269,228,187,227,186,43" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP4">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/4.NP_768.png" usemap="#image-map-4NP" class="4NP-1140 m-auto">
+              <map name="image-map-4NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-01-byt" coords="513,724,628,724,629,785,748,784,743,68,507,68,514,295,553,296,551,365,564,365,564,577,513,579" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-02-byt" coords="280,731,247,647,279,646,275,433,457,437,460,577,511,579,511,786,397,784,398,728" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-03-byt" coords="21,67,274,70,275,343,398,344,398,434,274,434,275,646,245,645" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-04-byt" coords="277,65,276,342,399,343,398,365,469,364,470,295,509,296,507,65" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/4.NP_520.png" usemap="#image-map-4NP-768" class="4NP-768 m-auto">
+              <map name="image-map-4NP-768">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-01-byt" coords="349,489,425,489,431,531,505,531,504,47,345,46,348,197,374,198,377,243,383,245,383,392,348,392" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-02-byt" coords="345,490,345,529,270,531,269,488,189,488,166,437,188,436,189,295,311,296,310,390,345,393" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-03-byt" coords="11,44,150,389,184,388,184,294,269,290,269,233,184,231,185,45" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a4-04-byt" coords="187,45,345,46,346,200,321,198,320,246,270,246,270,232,186,229" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP5">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/5.NP_768.png" usemap="#image-map-5NP" class="5NP-1140 m-auto">
+              <map name="image-map-5NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a5-01-byt" coords="513,64,747,66,749,724,625,726,624,782,513,781,513,576,564,576,561,362,550,360,551,293,511,289" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a5-02-byt" coords="247,647,279,721,280,782,391,779,389,724,509,725,510,578,457,575,457,431,276,433,274,575,279,647" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a5-03-byt" coords="21,61,158,64,277,65,273,339,397,343,395,431,274,433,274,573,221,574" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a5-04-byt" coords="276,63,508,65,507,288,510,294,469,295,470,364,396,362,397,338,276,338" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/5.NP_520.png" usemap="#image-map-5NP-768" class="5NP-768 m-auto">
+              <map name="image-map-5NP-768">
+                  <area target="" alt="" title="" href="../karta-bytu/?a5-01-byt" coords="345,487,348,528,423,530,422,490,506,490,507,44,348,46,346,197,374,196,373,244,381,245,383,389,347,389" shape="poly">
+                  <area target="" alt="" title="" href="../karta-bytu/?a5-02-byt" coords="188,488,188,531,264,530,265,488,344,488,346,389,310,387,308,292,187,292,188,435,167,434" shape="poly">
+                  <area target="" alt="" title="" href="../karta-bytu/?a5-03-byt" coords="13,40,187,46,187,229,268,230,268,291,184,292,181,387,152,387" shape="poly">
+                  <area target="" alt="" title="" href="../karta-bytu/?a5-04-byt" coords="188,45,345,45,345,196,320,196,318,245,269,246,270,230,185,225" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP6">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/6.NP_768.png" usemap="#image-map-6NP" class="6NP-1140 m-auto">
+              <map name="image-map-6NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a6-01-byt" coords="502,58,754,61,749,717,747,776,630,776,629,715,513,715,510,569,562,569,562,359,569,357,569,342,554,341,551,289,509,287,503,83" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a6-02-byt" coords="274,716,394,717,395,777,510,777,511,572,458,569,457,427,398,427,397,338,273,334,271,59,22,60" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a6-03-byt" coords="272,60,503,58,509,286,468,287,471,356,399,356,397,336,277,333" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/6.NP_520.png" usemap="#image-map-6NP-768" class="6NP-768 m-auto">
+              <map name="image-map-6NP-768">
+                  <area target="" alt="" title="" href="../karta-bytu/?a6-01-byt" coords="342,39,505,41,507,526,428,525,425,485,345,481,345,386,379,385,380,243,371,243,372,193,345,193" shape="poly">
+                  <area target="" alt="" title="" href="../karta-bytu/?a6-02-byt" coords="187,484,269,484,269,525,345,525,345,386,310,385,309,288,269,288,269,227,186,227,185,39,10,39" shape="poly">
+                  <area target="" alt="" title="" href="../karta-bytu/?a6-03-byt" coords="185,38,340,38,345,192,319,195,321,241,271,240,269,226,187,224" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP7">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_A/7.NP_768.png" usemap="#image-map-7NP" class="7NP-1140 m-auto">
+              <map name="image-map-7NP">
+                <area target="" alt="" title="" href="../karta-bytu/?a7-01-byt" coords="421,59,422,284,551,286,552,353,564,356,564,566,515,571,513,709,513,776,627,775,626,715,752,717,754,61" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?a7-02-byt" coords="420,61,421,287,473,291,473,355,459,354,458,570,513,573,510,717,392,714,393,776,282,775,280,716,17,57" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/7.NP_520.png" usemap="#image-map-7NP-768" class="7NP-768 m-auto">
+              <map name="image-map-7NP-768">
+                   <area target="" alt="" title="" href="../karta-bytu/?a7-01-byt" coords="285,43,510,42,509,486,423,485,424,525,349,525,349,485,349,388,383,383,381,242,374,242,375,194,285,192" shape="poly">
+                   <area target="" alt="" title="" href="../karta-bytu/?a7-02-byt" coords="284,40,285,193,319,195,321,239,312,242,311,385,347,388,347,487,265,485,266,523,191,524,191,485,10,40" shape="poly">
+              </map>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="flatPickerB">
+        <div class="container">
+          <div class="col-12" id = "NP1B">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_B/1.NPB_768.png" usemap="#image-map-1NPB" class="1NPB-1140 m-auto">
+              <map name="image-map-1NPB">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-01-app" coords="164,376,294,379,293,67,164,66" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-02-app" coords="294,377,427,378,423,81,294,66" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-03-app" coords="424,81,554,92,560,377,428,376" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-04-app" coords="557,89,691,88,695,467,591,454,539,462,482,456,479,414,493,413,491,378,559,378" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_B/1.NPB_520.png" usemap="#image-map-1NPB-768" class="2NP-768 m-auto">
+              <map name="image-map-1NPB-768">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-01-app" coords="110,255,199,256,198,46,112,46" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-02-app" coords="201,255,286,255,288,56,200,45" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-03-app" coords="291,256,379,255,374,65,290,55" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b1-04-app" coords="332,256,333,278,324,279,326,306,366,313,471,318,471,61,376,62,379,255" shape="poly">
+              </map>
+            </div>
+          </div>
+          <div class="col-12" id = "NP2B">
+            <div class="image-1140" >
+              <img src="../images/podorys/poschodia_B/2.NPB_768.png" usemap="#image-map-2NPB" class="2NPB-1140 m-auto">
+              <map name="image-map-2NPB">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-01-app" coords="104,129,103,194,177,194,179,305,310,307,308,129" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-02-app" coords="314,129,443,130,439,306,313,308" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-03-app" coords="444,129,576,132,574,309,443,307" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-04-app" coords="495,345,494,383,552,391,552,377,605,379,709,394,708,129,575,130,574,309,506,308,508,340" shape="poly">
+              </map>
+            </div>
+            <div class="image-768" >
+              <img src="../images/podorys/poschodia_A/3.NP_520.png" usemap="#image-map-2NPB-768" class="2NPB-768 m-auto">
+              <map name="image-map-2NPB-768">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-01-app" coords="69,85,70,127,120,129,121,207,209,207,208,87" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-02-app" coords="210,86,299,86,299,207,213,207" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-03-app" coords="299,88,390,89,390,207,298,206" shape="poly">
+                <area target="" alt="" title="" href="../karta-bytu/?b2-04-app" coords="388,208,343,210,343,231,335,232,336,258,374,266,373,236,374,255,409,255,480,266,480,89,390,89" shape="poly">
+              </map>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id = "flatChooser">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h4>Budova A</h4>              
+              <button class="floor w-100" onclick="showFlats(2)">2. Poschodie</button>
+              <div id="mobile2NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a2-01-app">A2.01 app</a>
+                <a class="flatLink" href="../karta-bytu/?a2-02-app">A2.02 app</a>
+                <a class="flatLink" href="../karta-bytu/?a2-03-app">A2.03 app</a>
+                <a class="flatLink" href="../karta-bytu/?a2-04-app">A2.04 app</a>
+                <a class="flatLink" href="../karta-bytu/?a2-05-app">A2.05 app</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(3)">3. Poschodie</button>
+              <div id="mobile3NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a3-01-app">A3.01 app</a>
+                <a class="flatLink" href="../karta-bytu/?a3-02-app">A3.02 app</a>
+                <a class="flatLink" href="../karta-bytu/?a3-03-app">A3.03 app</a>
+                <a class="flatLink" href="../karta-bytu/?a3-04-app">A3.04 app</a>
+                <a class="flatLink" href="../karta-bytu/?a3-05-app">A3.05 app</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(4)">4. Poschodie</button>
+              <div id="mobile4NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a4-01-app">A4.01 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a4-02-byt">A4.02 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a4-03-byt">A4.03 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a4-04-byt">A4.04 byt</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(5)">5. Poschodie</button>
+              <div id="mobile5NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a5-01-byt">A5.01 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a5-02-byt">A5.02 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a5-03-byt">A5.03 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a5-04-byt">A5.04 byt</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(6)">6. Poschodie</button>
+              <div id="mobile6NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a6-01-byt">A6.01 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a6-02-byt">A6.02 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a6-03-byt">A6.03 byt</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(7)">7. Poschodie</button>
+              <div id="mobile7NP" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?a7-01-byt">A7.01 byt</a>
+                <a class="flatLink" href="../karta-bytu/?a7-02-byt">A7.02 byt</a>
+              </div>
+            </div>
+            <div class="col-12">
+              <h4>Budova B</h4>              
+              <button class="floor w-100" onclick="showFlats(8)">1. Poschodie</button>
+              <div id="mobile1NPB" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?b1-01-app">B1.01 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-02-app">B1.02 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-03-app">B1.03 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-04-app">B1.04 app</a>
+              </div>
+              <button class="floor w-100" onclick="showFlats(9)">2. Poschodie</button>
+              <div id="mobile2NPB" class="linksHolder hide">
+                <a class="flatLink" href="../karta-bytu/?b2-01-app">B2.01 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-02-app">B2.02 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-03-app">B2.03 app</a>
+                <a class="flatLink" href="../karta-bytu/?b2-04-app">B2.04 app</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer" name="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <ul class="">
+                  <li class="">
+                    <a class="" href="../#about" onclick="about()">PROJEKT</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="" onclick="ponuka()">PONUKA BYTOV</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="../cennik">CENNÍK</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="../#location" onclick="map()">LOKALITA</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="../#gallery" onclick="gallery()">GALÉRIA</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="../#contact" onclick="contact()">KONTAKT</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12 created">
+              <a href="https://enli.sk" target="_blank">© 2018 ENLI VR Solutions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="../js/mickiewiczova.js"></script>
+    <script src="jquery.maphilight.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF8IVFFM04aaeMAzM_mutHH0UbcrPnwvk&callback=initMap" type="text/javascript"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js'></script>
+    <script src="../js/ponuka-bytov.js"></script>
+    <script type="text/javascript">
+
+      
+    </script>
+  </body>
+</html>
+
+
