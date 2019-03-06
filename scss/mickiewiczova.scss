@@ -552,6 +552,7 @@ p{
         padding: 12px 30px;
     position: relative;
     top: 30px;
+    cursor:pointer;
       }
     }
 }
@@ -985,4 +986,17 @@ table{
     position: absolute;
     top: 0;
   }
+}
+
+select{
+  display: inline-block;
+  width: 150px;
+  padding: 6px 10px;
+  margin-bottom: 20px !important;
+  border:none;
+  border-bottom: 1px solid;
+  outline: none;
+}
+option{
+  color:$font-color;
 }

@@ -542,6 +542,7 @@ p {
   padding: 12px 30px;
   position: relative;
   top: 30px;
+  cursor: pointer;
 }
 
 #contact {
@@ -987,4 +988,18 @@ table thead tr {
   top: 0;
 }
 
-/*# sourceMappingURL=mickiewiczova.css.map */
+select {
+  display: inline-block;
+  width: 150px;
+  padding: 6px 10px;
+  margin-bottom: 20px !important;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+}
+
+option {
+  color: #4a4a4a;
+}
+
+/*# sourceMappingURL=css/mickiewiczova.css.map */

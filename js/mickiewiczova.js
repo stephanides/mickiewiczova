@@ -62,7 +62,8 @@ $(function(){
 function filterText()
 	{  
 		var rex = new RegExp($('#filterText').val());
-		if(rex =="/all/"){clearFilter()}else{
+    console.log(rex);
+		if(rex =="/vsetko/"){clearFilter()}else{
 			$('.content').hide();
 			$('.content').filter(function() {
 			return rex.test($(this).text());
@@ -75,6 +76,27 @@ function clearFilter()
 		$('.filterText').val('');
 		$('.content').show();
 	}
+
+
+function filterTextB()
+  {  
+    var rex = new RegExp($('#filterTextB').val());
+    console.log(rex);
+    if(rex =="/vsetko/"){clearFilterB()}else{
+      $('.contentB').hide();
+      $('.contentB').filter(function() {
+      return rex.test($(this).text());
+      }).show();
+  }
+  }
+  
+function clearFilterB()
+  {
+    $('.filterTextB').val('');
+    $('.contentB').show();
+  }
+
+
 
 var dataJson;
 
@@ -101,9 +123,10 @@ var volne = 0;
 
 function append_json(data){
   var table = document.getElementById('myTable');
+  var tableB = document.getElementById('myTableB')
   for(var i = 0; i < dataJson.flats.length; i++){
       var tr = document.createElement('tr');
-      tr.classList.add("content");
+      
       if(dataJson.flats[i].status == "V"){
       	tr.classList.add("available");
           
@@ -115,20 +138,41 @@ function append_json(data){
       	tr.classList.add("sold");
       }
       if(document.URL.indexOf("cennik") >= 0 ){
-      tr.setAttribute('onclick', "document.location = " + "'" + "../karta-bytu?" + dataJson.flats[i].path + "'");
-      tr.innerHTML ='<td>' + dataJson.flats[i].name + '</td>' +
-      '<td>' + dataJson.flats[i].floor + '</td>' +
-      '<td>' + dataJson.flats[i].rozloha  + '</td>' +
-      '<td>' + dataJson.flats[i].balkon  + '</td>' + 
-      '<td>' + dataJson.flats[i].pivnica + '</td>' + 
-      '<td>' + dataJson.flats[i].sklad + '</td>' + 
-      '<td>' + dataJson.flats[i].komora + '</td>' +
-      '<td>' + dataJson.flats[i].terasa + '</td>' + 
-      '<td>' + dataJson.flats[i].izby + '</td>' + 
-      '<td>' + dataJson.flats[i].cena + '</td>' + 
-      '<td>' + dataJson.flats[i].cena2 + '</td>' + 
-      '<td class="status">' + dataJson.flats[i].status + '</td>';
-      table.appendChild(tr);
+        if(dataJson.flats[i].object == "A"){
+          tr.classList.add("content");
+        tr.setAttribute('onclick', "document.location = " + "'" + "../karta-bytu?" + dataJson.flats[i].path + "'");
+        tr.innerHTML ='<td>' + dataJson.flats[i].name + '</td>' +
+        '<td>' + dataJson.flats[i].floor + '</td>' +
+        '<td>' + dataJson.flats[i].rozloha  + '</td>' +
+        '<td>' + dataJson.flats[i].balkon  + '</td>' + 
+        '<td>' + dataJson.flats[i].pivnica + '</td>' + 
+        '<td>' + dataJson.flats[i].terasa + '</td>' +
+        '<td>' + dataJson.flats[i].izby + '</td>' + 
+        '<td>' + dataJson.flats[i].spolu + '</td>' +  
+        '<td>' + dataJson.flats[i].cena.replace(',', ' ') + '</td>' + 
+        '<td>' + dataJson.flats[i].cena2.replace(',', ' ') + '*</td>' + 
+        '<td class="status">' + dataJson.flats[i].status + '</td>';
+        table.appendChild(tr);
+      }
+      if(dataJson.flats[i].object == "B"){
+        tr.classList.add("contentB");
+        tr.setAttribute('onclick', "document.location = " + "'" + "../karta-bytu?" + dataJson.flats[i].path + "'");
+        tr.innerHTML ='<td>' + dataJson.flats[i].name + '</td>' +
+        '<td>' + dataJson.flats[i].floor + '</td>' +
+        '<td>' + dataJson.flats[i].rozloha  + '</td>' +
+        '<td>' + dataJson.flats[i].balkon  + '</td>' + 
+        '<td>' + dataJson.flats[i].pivnica + '</td>' + 
+        '<td>' + dataJson.flats[i].sklad + '</td>' + 
+        '<td>' + dataJson.flats[i].komora + '</td>' +
+        '<td>' + dataJson.flats[i].terasa + '</td>' +
+        '<td>' + dataJson.flats[i].zahradka + '</td>' +
+        '<td>' + dataJson.flats[i].izby + '</td>' + 
+        '<td>' + dataJson.flats[i].spolu + '</td>' +  
+        '<td>' + dataJson.flats[i].cena.replace(',', ' ') + '</td>' + 
+        '<td>' + dataJson.flats[i].cena2.replace(',', ' ') + '*</td>' + 
+        '<td class="status">' + dataJson.flats[i].status + '</td>';
+        tableB.appendChild(tr);
+      }
     }
   }
 }
@@ -421,8 +465,20 @@ function initMap() {
     ]
   }
 ]});
-  var marker = new google.maps.Marker({position: uluru, map: map});
- 
+  //var marker = new google.maps.Marker({position: uluru, map: map});
+
+  var marker = new google.maps.Marker({
+
+            position: {lat: 48.150074, lng: 17.116167},
+
+            icon: './images/logo.png',
+
+            maxZoom: 10,
+
+            map: map
+
+        });
+  
 
 
 var shapes = [];

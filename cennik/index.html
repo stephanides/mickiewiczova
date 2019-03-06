@@ -50,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section id="pricelist" name="pricelist">
+      <section id="pricelist" name="pricelist" class="mb-4">
         <div class="container-fluid">
           <div class="row">
             <div class="container">
@@ -61,17 +61,96 @@
                 </div>
               </div>
             </div>
-              <div class="col-12 mt-4" style="display: none;">
+             
+            <div class="vovystavbe">
+              <h3 class="w-100 text-center mb-4 mt-4">Bytový dom A prízemie</h3>
+                <table id="table_format" class="table table-bordered table-striped table-hover table-list-search">
+                    <thead>
+                        <tr>
+                            <th>Názov</th>
+                            <th>Podlažie</th>
+                            <th>Rozloha</th>
+                            <th>Predajná cena</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                      <tr>
+                        <td>Retail A1.01</td>
+                        <td>1. NP</td>
+                        <td>120.00 m2</td>
+                        <td>480 000 €</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <h3 class="w-100 text-center mb-4 mt-4">Bytový dom A parkovacie miesta</h3>
+                <table id="table_format" class="table table-bordered table-striped table-hover table-list-search">
+                    <thead>
+                        <tr>
+                            <th>Názov</th>
+                            <th>Podlažie</th>
+                            <th>Počet miest</th>
+                            <th>Cena za parkovacie miesto s DPH</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                      <tr>
+                        <td>Parking</td>
+                        <td>1. PP</td>
+                        <td>18 + 1 inv.</td>
+                        <td>25 000 €</td>
+                      </tr>
+                      <tr>
+                        <td>Parking</td>
+                        <td>2. PP</td>
+                        <td>22 miest</td>
+                        <td>25 000 €</td>
+                      </tr>
+                    </tbody>
+                </table>
+              <h3 class="w-100 text-center mb-4">Bytový dom A 2.NP - 7.NP</h3>
+               <div class="col-12 mt-4">
+                <h5>Podlažia</h5>
                 <select id='filterText' style='display:inline-block' onchange='filterText()'>
-                  <option disabled selected>Select</option>
-                  <option value='yes'>Yes</option>
-                  <option value='no'>No</option>
-                  <option value='all'>All</option>
+                  <option value='vsetko'>Všetky</option>
+                  <option value='2.NP'>2.NP</option>
+                  <option value='3.NP'>3.NP</option>
+                  <option value='4.NP'>4.NP</option>
+                  <option value='5.NP'>5.NP</option>
+                  <option value='6.NP'>6.NP</option>
+                  <option value='7.NP'>7.NP</option>
                 </select>
               </div>
-            <div class="vovystavbe">
-              <table id="header-fixed" class="table table-bordered table-striped table-hover table-list-search"></table>
-            <table id="table_format" class="table table-bordered table-striped table-hover table-list-search">
+              <!--<table id="header-fixed" class="table table-bordered table-striped table-hover table-list-search"></table>-->
+              <table id="table_format" class="table table-bordered table-striped table-hover table-list-search">
+                    <thead>
+                        <tr>
+                            <th>Byt</th>
+                            <th>Podlažie</th>
+                            <th>Úžitková plocha bytu m2</th>
+                            <th>Plocha balkón/loggia m2</th>
+                            <th>Pivnica m2</th>
+                            <th>Terasa m2</th>
+                            <th>Počet izieb</th>
+                            <th>Rozloha spolu m2</th>
+                            <th>Cena s DPH (holobyt)</th>
+                            <th>Cena s DPH (štandard)</th>
+                            <th>Stav</th>
+                        </tr>
+                    </thead>
+                    <tbody  id="myTable">
+                    </tbody>
+                </table>
+
+                <h3 class="w-100 text-center mb-4 mt-4">Bytový dom B</h3>
+                <div class="col-12 mt-4">
+                <!--<select id='filterTextB' style='display:inline-block' onchange='filterTextB()'>
+                  <option disabled selected>Podlažia</option>
+                  <option value='vsetko'>Všetky</option>
+                  <option value='1.NP'>1.NP</option>
+                  <option value='2.NP'>2.NP</option>
+                </select>-->
+              </div>
+                <table id="table_format" class="table table-bordered table-striped table-hover table-list-search mb-4">
                     <thead>
                         <tr>
                             <th>Byt</th>
@@ -82,16 +161,19 @@
                             <th>Sklad m2</th>
                             <th>Komora m2</th>
                             <th>Terasa m2</th>
+                            <th>Predzáhradka s terasou m2</th>
                             <th>Počet izieb</th>
+                            <th>Rozloha spolu m2</th>
                             <th>Cena s DPH (holobyt)</th>
                             <th>Cena s DPH (štandard)</th>
                             <th>Stav</th>
                         </tr>
                     </thead>
-                    <tbody  id="myTable">
+                    <tbody  id="myTableB">
                     </tbody>
                 </table>
-                </div>
+                <p>* poznámka: Ohľadom dokončenia bytu na úroveň "štandard" nás neváhajte kontaktovať, radi Vám poskytneme potrebné informácie.</p>
+              </div>
           </div>
         </div>
       </section>

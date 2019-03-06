@@ -1,7 +1,7 @@
 {
   "flats": [
     {
-      "name":"A2.01 app",
+      "name":"A2.01",
       "floor":"2.NP",
       "rozloha":"37.78 m2",
       "balkon":"4.23 m2",
@@ -19,7 +19,7 @@
       "object":"A"
     },
     {
-      "name":"A2.02 app",
+      "name":"A2.02",
       "floor":"2.NP",
       "rozloha":"37.08 m2",
       "balkon":"4.01 m2",
@@ -37,7 +37,7 @@
       "object":"A"
     },
     {
-      "name":"A2.03 app",
+      "name":"A2.03",
       "floor":"2.NP",
       "rozloha":"50.64 m2",
       "balkon":"3.35 m2",
@@ -55,7 +55,7 @@
       "object":"A"
     },
     {
-      "name":"A2.04 app",
+      "name":"A2.04",
       "floor":"2.NP",
       "rozloha":"35.73 m2",
       "balkon":"3.35 m2",
@@ -67,13 +67,13 @@
       "izby":"2",
       "cena":"140,000 €",
       "cena2":"145,000 €",
-      "status":"R",
+      "status":"V",
       "path":"a2-04-app",
       "imgPath":"../images/podorys/budova_A/A204.png",
       "object":"A"
     },
     {
-      "name":"A2.05 app",
+      "name":"A2.05",
       "floor":"2.NP",
       "rozloha":"41.44 m2",
       "balkon":"3.91 m2",
@@ -91,7 +91,7 @@
       "object":"A"
     },
     {
-      "name":"A3.01 app",
+      "name":"A3.01",
       "floor":"3.NP",
       "rozloha":"37.82 m2",
       "balkon":"3.98 m2",
@@ -103,13 +103,13 @@
       "izby":"2",
       "cena":"151,000 €",
       "cena2":"156,000 €",
-      "status":"P",
+      "status":"V",
       "path":"a3-01-app",
       "imgPath":"../images/podorys/budova_A/A301.png",
       "object":"A"
     },
     {
-      "name":"A3.02 app",
+      "name":"A3.02",
       "floor":"3.NP",
       "rozloha":"37.32 m2",
       "balkon":"3.98 m2",
@@ -127,7 +127,7 @@
       "object":"A"
     },
     {
-      "name":"A3.03 app",
+      "name":"A3.03",
       "floor":"3.NP",
       "rozloha":"50.29 m2",
       "balkon":"3.91 m2",
@@ -145,7 +145,7 @@
       "object":"A"
     },
     {
-      "name":"A3.04 app",
+      "name":"A3.04",
       "floor":"3.NP",
       "rozloha":"34.92 m2",
       "balkon":"3.70 m2",
@@ -163,7 +163,7 @@
       "object":"A"
     },
     {
-      "name":"A3.05 app",
+      "name":"A3.05",
       "floor":"3.NP",
       "rozloha":"42.33 m2",
       "balkon":"3.09 m2",
@@ -181,7 +181,7 @@
       "object":"A"
     },
     {
-      "name":"A4.01 byt",
+      "name":"A4.01",
       "floor":"4.NP",
       "rozloha":"82.90 m2",
       "balkon":"8.68 m2",
@@ -199,7 +199,7 @@
       "object":"A"
     },
     {
-      "name":"A4.02 byt",
+      "name":"A4.02",
       "floor":"4.NP",
       "rozloha":"37.31 m2",
       "balkon":"4.49 m2",
@@ -217,7 +217,7 @@
       "object":"A"
     },
     {
-      "name":"A4.03 byt",
+      "name":"A4.03",
       "floor":"4.NP",
       "rozloha":"51.35 m2",
       "balkon":"3.37 m2",
@@ -235,7 +235,7 @@
       "object":"A"
     },
     {
-      "name":"A4.04 byt",
+      "name":"A4.04",
       "floor":"4.NP",
       "rozloha":"35.75 m2",
       "balkon":"3.37 m2",
@@ -253,7 +253,7 @@
       "object":"A"
     },
     {
-      "name":"A5.01 byt",
+      "name":"A5.01",
       "floor":"5.NP",
       "rozloha":"83.46 m2",
       "balkon":"7.81 m2",
@@ -271,7 +271,7 @@
       "object":"A"
     },
     {
-      "name":"A5.02 byt",
+      "name":"A5.02",
       "floor":"5.NP",
       "rozloha":"37.31 m2",
       "balkon":"4.49 m2",
@@ -289,7 +289,7 @@
       "object":"A"
     },
     {
-      "name":"A5.03 byt",
+      "name":"A5.03",
       "floor":"5.NP",
       "rozloha":"50.32 m2",
       "balkon":"3.90 m2",
@@ -307,7 +307,7 @@
       "object":"A"
     },
     {
-      "name":"A5.04 byt",
+      "name":"A5.04",
       "floor":"5.NP",
       "rozloha":"35.40 m2",
       "balkon":"3.70 m2",
@@ -325,7 +325,7 @@
       "object":"A"
     },
     {
-      "name":"A6.01 byt",
+      "name":"A6.01",
       "floor":"6.NP",
       "rozloha":"82.90 m2",
       "balkon":"8.68 m2",
@@ -343,7 +343,7 @@
       "object":"A"
     },
     {
-      "name":"A6.02 byt",
+      "name":"A6.02",
       "floor":"6.NP",
       "rozloha":"87.41 m2",
       "balkon":"7.39 m2",
@@ -361,7 +361,7 @@
       "object":"A"
     },
     {
-      "name":"A6.03 byt",
+      "name":"A6.03",
       "floor":"6.NP",
       "rozloha":"35.75 m2",
       "balkon":"3.37 m2",
@@ -379,7 +379,7 @@
       "object":"A"
     },
     {
-      "name":"A7.01 byt",
+      "name":"A7.01",
       "floor":"7.NP",
       "rozloha":"74.16 m2",
       "balkon":"4.02 m2",
@@ -397,7 +397,7 @@
       "object":"A"
     },
     {
-      "name":"A7.02 byt",
+      "name":"A7.02",
       "floor":"7.NP",
       "rozloha":"94.25 m2",
       "balkon":"4.02 m2",
@@ -415,14 +415,15 @@
       "object":"A"
     },
     {
-      "name":"B1.01 app",
+      "name":"B1.01",
       "floor":"1.NP",
       "rozloha":"30.14 m2",
       "balkon":"-",
       "pivnica":"2.28 m2",
       "sklad":"9.14 m2",
       "komora":"3.41 m2",
-      "terasa":"38.17 m2",
+      "terasa":"-",
+      "zahradka":"38.17 m2",
       "spolu":"83.14 m2",
       "izby":"2",
       "cena":"174,000 €",
@@ -433,14 +434,15 @@
       "object":"B"
     },
     {
-      "name":"B1.02 app",
+      "name":"B1.02",
       "floor":"1.NP",
       "rozloha":"30.52 m2",
       "balkon":"-",
       "pivnica":"2.34 m2",
       "sklad":"-",
       "komora":"2.64 m2",
-      "terasa":"24.00 m2",
+      "terasa":"-",
+      "zahradka":"24.00 m2",
       "spolu":"59.50 m2",
       "izby":"2",
       "cena":"165,000 €",
@@ -451,14 +453,15 @@
       "object":"B"
     },
     {
-      "name":"B1.03 app",
+      "name":"B1.03",
       "floor":"1.NP",
       "rozloha":"30.52 m2",
       "balkon":"-",
       "pivnica":"2.28 m2",
       "sklad":"-",
       "komora":"4.79 m2",
-      "terasa":"21.60 m2",
+      "terasa":"-",
+      "zahradka":"21.60 m2",
       "spolu":"59.19 m2",
       "izby":"2",
       "cena":"165,000 €",
@@ -469,14 +472,15 @@
       "object":"B"
     },
     {
-      "name":"B1.04 app",
+      "name":"B1.04",
       "floor":"1.NP",
       "rozloha":"49.77 m2",
       "balkon":"1.95 m2",
       "pivnica":"2.34 m2",
       "sklad":"-",
       "komora":"-",
-      "terasa":"21.40 m2",
+      "terasa":"-",
+      "zahradka":"21.40 m2",
       "spolu":"75.46 m2",
       "izby":"2",
       "cena":"188,000 €",
@@ -487,43 +491,26 @@
       "object":"B"
     },
     {
-      "name":"B2.01 app",
-      "floor":"2.NP",
-      "rozloha":"36.73 m2",
+      "name":"B2.01",
+      "floor":"2.NP + 3.NP",
+      "rozloha":"36.73 + 56.04 m2",
       "balkon":"-",
       "pivnica":"-",
       "sklad":"-",
        "komora":"5.74 m2",
-       "terasa":"-",
+       "terasa":"56.46 m2",
+       "zahradka":"-",
       "spolu":"154.97 m2",
       "izby":"3",
       "cena":"414,000 €",
       "cena2":"424,000 €",
       "status":"V",
       "path":"b2-01-app",
-      "imgPath":"../images/podorys/budova_B/B201_2.png",
+      "imgPath":"../images/podorys/budova_B/B201.png",
       "object":"B"
     },
     {
-      "name":"B2.01 app",
-      "floor":"3.NP",
-      "rozloha":"56.04 m2",
-      "balkon":"-",
-      "pivnica":"-",
-      "sklad":"-",
-      "komora":"-",
-      "terasa":"56.46 m2",
-      "spolu":"154.97 m2",
-      "izby":"3",
-      "cena":"414,000 €",
-      "cena2":"424,000 €",
-      "status":"V",
-      "path":"b2-01-app",
-      "imgPath":"../images/podorys/budova_B/B201_1.png",
-      "object":"B"
-    },
-    {
-      "name":"B2.02 app",
+      "name":"B2.02",
       "floor":"2.NP",
       "rozloha":"30.14 m2",
       "balkon":"-",
@@ -531,6 +518,7 @@
       "sklad":"-",
       "komora":"4.43 m2",
       "terasa":"-",
+      "zahradka":"-",
       "spolu":"36.91 m2",
       "izby":"2",
       "cena":"135,000 €",
@@ -541,7 +529,7 @@
       "object":"B"
     },
     {
-      "name":"B2.03 app",
+      "name":"B2.03",
       "floor":"2.NP",
       "rozloha":"30.14 m2",
       "balkon":"-",
@@ -549,6 +537,7 @@
       "sklad":"-",
       "komora":"4.89 m2",
       "terasa":"-",
+      "zahradka":"-",
       "spolu":"37.37 m2",
       "izby":"2",
       "cena":"135,000 €",
@@ -559,14 +548,15 @@
       "object":"B"
     },
     {
-      "name":"B2.04 app",
+      "name":"B2.04",
       "floor":"2.NP",
       "rozloha":"49.77 m2",
-      "balkon":"1.67",
+      "balkon":"1.67 m2",
       "pivnica":"3.71 m2",
       "sklad":"-",
       "komora":"-",
       "terasa":"-",
+      "zahradka":"-",
       "spolu":"55.15 m2",
       "izby":"2",
       "cena":"170,000 €",
